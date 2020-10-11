@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@import 'base';
+
+main {
+//  padding: 1rem;
+  font-size: 2rem;
+  height: 100vh;
+}
+
+.wrapper {
+  height: 100vh;
+  div {
+    margin: 0.5rem;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+
+  .item3 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 4;
+    grid-column-end: 4;
+  }
+}
