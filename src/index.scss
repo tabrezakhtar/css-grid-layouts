@@ -3,7 +3,6 @@
 @import 'base';
 
 main {
-//  padding: 1rem;
   font-size: 2rem;
   height: 100vh;
 }
@@ -19,13 +18,25 @@ main {
   }
 
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr;
+  grid-template-rows: 10rem auto 10rem;
+
+  .header {
+    grid-column: 1 / 5;
+  }
+
+  .item2 {
+    grid-row: 2 / 4;
+    grid-column: 1;
+  }
 
   .item3 {
-    grid-row-start: 1;
-    grid-column-start: 3;
-    grid-row-end: 4;
-    grid-column-end: 4;
+    grid-row: 2 / 3;
+    grid-column: 2 / 5;
+  }
+
+  .footer {
+    grid-row: 3;
+    grid-column: 2 / 5;
   }
 }
